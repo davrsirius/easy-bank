@@ -2,7 +2,7 @@
   --green: #30c88f;
   --black: #2d314d;
   --grey: #9597a5;
-  --gradient: linear-gradient(135deg, #33d35e 0%, #2ab6d9 100%);
+  --gradient: linear-gradient(135deg, #33d35e 0%, #2ab6d9 99.58%);
 }
 
 
@@ -12,9 +12,9 @@
   font-family: 'Public Sans';
   src: url('../fonts/PublicSans-Regular.eot');
   src: url('../fonts/PublicSans-Regular.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/PublicSans-Regular.woff2') format('woff2'),
-      url('../fonts/PublicSans-Regular.woff') format('woff'),
-      url('../fonts/PublicSans-Regular.ttf') format('truetype');
+    url('../fonts/PublicSans-Regular.woff2') format('woff2'),
+    url('../fonts/PublicSans-Regular.woff') format('woff'),
+    url('../fonts/PublicSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -24,9 +24,9 @@
   font-family: 'Public Sans';
   src: url('../fonts/PublicSans-Thin.eot');
   src: url('../fonts/PublicSans-Thin.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/PublicSans-Thin.woff2') format('woff2'),
-      url('../fonts/PublicSans-Thin.woff') format('woff'),
-      url('../fonts/PublicSans-Thin.ttf') format('truetype');
+    url('../fonts/PublicSans-Thin.woff2') format('woff2'),
+    url('../fonts/PublicSans-Thin.woff') format('woff'),
+    url('../fonts/PublicSans-Thin.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -36,9 +36,9 @@
   font-family: 'Public Sans';
   src: url('../fonts/PublicSans-Medium.eot');
   src: url('../fonts/PublicSans-Medium.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/PublicSans-Medium.woff2') format('woff2'),
-      url('../fonts/PublicSans-Medium.woff') format('woff'),
-      url('../fonts/PublicSans-Medium.ttf') format('truetype');
+    url('../fonts/PublicSans-Medium.woff2') format('woff2'),
+    url('../fonts/PublicSans-Medium.woff') format('woff'),
+    url('../fonts/PublicSans-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -115,22 +115,172 @@ select:-webkit-autofill:focus {
   color: rgba(52, 49, 61, 0.5);
 }  */
 
+
 /* CONTAINER */
 
 .container {
   width: 100%;
   max-width: 1150px;
-  padding-left:20px;
-  padding-right:20px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
+
+/* LOGO */
+
+.logo {
+  display: flex;
+}
+
+.logo__img {
+  width: 139px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+
+/* SITENAV */
+
+
+.sitenav__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sitenav__item {
+  padding: 32px 0;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 30px;
+  position: relative;
+}
+
+.sitenav__link {
+  display: block;
+  font-size: 14px;
+  line-height: normal;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--grey);
+  letter-spacing: -0.108px;
+}
+
+.sitenav__link:hover {
+  color: var(--black);
+}
+
+.sitenav__link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 4%;
+  width: 100%;
+  background-color: var(--green);
+  background-image: var(--gradient);
+  display: none;
+}
+
+.sitenav__link:hover::after {
+  display: block;
+}
+
+
+/* BUTTONS */
+
+.button {
+  display: inline-block;
+  padding: 8px 36px 8px 33px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 100%);
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.button:hover::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+
+.button:active {
+  transform: translateY(2px);
+}
+
+
 
 
 /* MAIN CONTENT */
 .main-content {
   flex-grow: 1;
 }
+
+
+
+
+
+/* SITE HEADER */
+
+.site-header {
+  /* padding-top: 18px;
+  padding-bottom: 18px; */
+  background-color: #fff;
+}
+
+.site-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* RETINA BACKGROUNDS */
