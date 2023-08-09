@@ -161,11 +161,11 @@ select:-webkit-autofill:focus {
 
 .sitenav__item {
   padding: 32px 0;
+  position: relative;
 }
 
 .sitenav__item:not(:last-child) {
   margin-right: 30px;
-  position: relative;
 }
 
 .sitenav__link {
