@@ -236,6 +236,18 @@ select:-webkit-autofill:focus {
 
 
 
+/* SITE HEADER */
+
+.site-header {
+  position: relative;
+  z-index: 50;
+  background-color: #fff;
+}
+
+.site-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
 /* MAIN CONTENT */
 .main-content {
