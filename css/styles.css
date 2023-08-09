@@ -248,6 +248,7 @@ select:-webkit-autofill:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
 /* MAIN CONTENT */
 .main-content {
@@ -303,6 +304,8 @@ select:-webkit-autofill:focus {
   left: calc(50% + 76px);
   top: -115px;
 }
+
+
 
 
 
